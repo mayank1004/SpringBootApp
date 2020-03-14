@@ -1,6 +1,6 @@
 package com.example.restDemo.externalService.WSObject;
 
-public class CheckNorrisJokeResponse {
+public class ChuckNorrisJokeResponse {
     String value;
 
     public String getValue() {

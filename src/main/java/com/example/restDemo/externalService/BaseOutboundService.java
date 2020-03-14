@@ -1,9 +1,5 @@
 package com.example.restDemo.externalService;
 
-import com.example.restDemo.externalService.WSObject.CheckNorrisJokeResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.client.RestOperations;
-
 
 public class BaseOutboundService<T> {
 

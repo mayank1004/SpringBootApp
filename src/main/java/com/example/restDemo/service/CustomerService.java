@@ -14,6 +14,6 @@ import java.util.List;
 @RequestMapping(CustomerControllerImp.BASE_URL)
 public interface CustomerService {
     WSCustomerResponse findCustomerById(Long id) throws Exception;
-    List<Customer> findAllCustomers();
+    List<WSCustomerResponse> findAllCustomers();
     Customer saveCustomer(WSCustomerRequest customer);
 }

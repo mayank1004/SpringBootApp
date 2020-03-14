@@ -20,7 +20,7 @@ public class CustomerControllerImp implements CustomerController{
         this.customerServcieImp = customerService;
     }
 
-    public List<Customer> getAllCustomers(){
+    public List<WSCustomerResponse> getAllCustomers(){
         return customerServcieImp.findAllCustomers();
     }
 
