@@ -2,7 +2,6 @@ package com.example.restDemo.controllers;
 
 import com.example.restDemo.WSObject.WSCustomerRequest;
 import com.example.restDemo.WSObject.WSCustomerResponse;
-import com.example.restDemo.appException.domain.DataNotFoundException;
 import com.example.restDemo.appException.domain.DataValidationException;
 import com.example.restDemo.domain.Customer;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +11,7 @@ import java.util.List;
 public interface CustomerController {
 
     @GetMapping
-    List<Customer> getAllCustomers();
+    List<WSCustomerResponse> getAllCustomers();
 
     @GetMapping("/{id}")
     WSCustomerResponse getCustomerById(@PathVariable Long id) throws Exception;
